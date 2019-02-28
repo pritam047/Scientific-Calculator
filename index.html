@@ -1,0 +1,97 @@
+<!doctype HTML>
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=yes">
+    <link rel="shortcut icon" href="calculator-1.png" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="assets/js/control.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Volkhov:700" rel="stylesheet">
+   
+  <!--  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  -->
+    </head>
+    <title>Scientific Calculator</title>
+    <div id="title">
+      <header><b style="color:white">S</b>CIE<b style="color:white">N</b>TIFI<b style="color:white">C</b> <b style="color:white">C</b>ALC<b style="color:white">U</b>LATO<b style="color:white">R</b></header>
+      </div>
+    <body>
+   <!-- <div class="container-fluid">-->
+    
+    <!--<div class="row">-->
+    <div class="main">  
+    <form name="calculator" id="align">
+    <input id="result" name="answer" value="" type="text"><br>   
+  <!--<div id="content">-->
+   
+    <p>
+    <button type="button" id="deg" name="b" value="deg" onclick="shift(1)">deg</button>
+    <button type="button" onclick="bsin()">sin</button>
+    <button type="button" onclick="bcos()">cos</button>
+    <button type="button" onclick="btan()">tan</button>
+    <button type="button" onclick="CE()">CE</button>
+    <button type="button" onclick="del()">C</button>
+    <button type="button" onclick="backspace(this.form)"><img src="backspace.png"></button>
+    <button type="button" onclick="input('/')">&#247;</button>
+    </p> 
+
+    <p>
+   <!-- <button type="button" onclick="input('7')">x<sup>3</button> 
+    <button type="button" onclick="input('8')"><sup>y</sup>&#8730;</button>-->
+    <button type="button" onclick="sqrc()">x<sup>2</button>
+    <button type="button" onclick="asin()">sin<sup>-1</button>
+    <button type="button" onclick="acos()">cos<sup>-1</button>
+    <button type="button" onclick="atan()">tan<sup>-1</button>
+    <button type="button" onclick="input('7')">7</button>
+    <button type="button" onclick="input('8')">8</button>
+    <button type="button" onclick="input('9')">9</button>
+    <button type="button" onclick="input('*')">&#215;</button>    
+    </p>
+    <p>
+    <button type="button" onclick="pow()">x<sup>y</button>
+    <button type="button" onclick="tenx()">10<sup>x</button>
+    <button type="button" onclick="log()">log</button>
+   <!-- <button type="button" onclick="Exp()">Exp</button>-->
+    <button type="button" onclick="abs()">Mod</button>
+    <button type="button" onclick="input('4')">4</button>
+    <button type="button" onclick="input('5')">5</button>
+    <button type="button" onclick="input('6')">6</button>
+    <button type="button" onclick="input('-')">-</button>    
+    </p>
+    <p>
+    <button type="button" onclick="sqrt()">&#8730;</button>
+    <button type="button" onclick="inv()">1/x</button>
+    <button type="button" onclick="exp()">e<sup>x</button>
+    <button type="button" onclick="ln()">ln</button>
+   <!-- <button type="button" onclick="input('7')">dms</button>
+    <button type="button" onclick="input('8')">deg</button>
+   -->
+    <button type="button" onclick="input('1')">1</button>
+    <button type="button" onclick="input('2')">2</button>
+    <button type="button" onclick="input('3')">3</button>
+    <button type="button" onclick="input('+')">+</button>            
+    </p>
+    <p>
+       <!-- <button type="button" onclick="input('7')">↑</button>-->
+        <button type="button" onclick="pie()">&#x03C0;</button>
+        <button type="button" onclick="fact_function()">!</button>
+        <button type="button" onclick="openpara()">(</button>
+        <button type="button" onclick="closepara()">)</button>
+        <button type="button" onclick="invalid()">±</button>
+        <button type="button" onclick="input('0')">0</button>
+        <button type="button" onclick="input('.')">.</button>
+        <button type="button" onclick="equals(this.form)">=</button>            
+    </p>
+    </form>
+    </div>
+    <p id="name">&#169;Pritam Kar</p>
+    </body>
+    
+</html>
