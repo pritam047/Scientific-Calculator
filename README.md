@@ -12,7 +12,8 @@ calculator to perform mathematical computations
 
 # Running the webpage
 You can go the below given link to check out my webpage:
-(https://mycalcnet.netlify.com)[https://mycalcnet.netlify.com]
+
+[https://mycalcnet.netlify.com]
 
 # Screenshot
 ![](./calc.png)
